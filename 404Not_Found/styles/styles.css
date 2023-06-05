@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  padding: 0 77px;
+}
+
+header {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #333333;
+  margin-top: 40px;
+}
+
+main {
+  margin-top: 200px;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  gap: 120px;
+}
+main img {
+  width: 540px;
+  height: 447px;
+}
+main h1 {
+  color: #333333;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  margin-bottom: 36px;
+}
+main h6 {
+  color: #4f4f4f;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  margin-bottom: 64px;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=styles.css.map */
