@@ -9,10 +9,9 @@ html {
 }
 
 .container {
-  padding: 20px 0 24px 24px;
+  padding: 20px 10px 24px 24px;
+  min-height: 1000px;
   position: relative;
-  height: 949px;
-  /* overflow: hidden; */
 }
 .container header {
   font-family: "Inconsolata", monospace;
@@ -28,7 +27,7 @@ html {
   font-family: "Space Mono", monospace;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 5px;
   align-items: center;
 }
 .container main img {
@@ -63,7 +62,8 @@ html {
   text-transform: uppercase;
   cursor: pointer;
 }
-.container footer {
+
+footer {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 500;
@@ -72,5 +72,38 @@ html {
   color: #bdbdbd;
   position: absolute;
   bottom: 0;
+  left: 50%;
+  margin-left: -145.5px;
   padding-bottom: 10px;
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    padding: 40px 120px 0 77px;
+    min-height: 100vh;
+  }
+  .container main {
+    margin-top: 75px;
+    flex-direction: row;
+    gap: 100px;
+  }
+  .container main img {
+    width: 525px;
+    height: 400px;
+  }
+  .container main h1 {
+    font-size: 64px;
+    line-height: 85px;
+  }
+  .container main h6 {
+    font-size: 24px;
+    line-height: 36px;
+    width: 380px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-height: 765px) {
+  .container {
+    min-height: 100vh;
+  }
 }/*# sourceMappingURL=styles.css.map */
