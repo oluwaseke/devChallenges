@@ -2,49 +2,77 @@ $dark1: #333333;
 $dark2: #4f4f4f;
 * {
   box-sizing: border-box;
+}
+body,
+html {
+  padding: 0;
   margin: 0;
 }
-body {
-  padding: 0 77px;
-}
-header {
-  font: {
-    family: "Inconsolata", monospace;
-    weight: 700;
-    size: 24px;
-  }
-  line-height: 25px;
-  letter-spacing: -0.08em;
-  text-transform: uppercase;
-  color: $dark1;
-  margin-top: 40px;
-}
-main {
-  margin-top: 200px;
-  font-family: "Space Mono", monospace;
-  display: flex;
-  gap: 120px;
-  img {
-    width: 540px;
-    height: 447px;
-  }
-  h1 {
+.container {
+  padding: 20px 0 24px 24px;
+  position: relative;
+  height: 949px;
+  /* overflow: hidden; */
+  header {
+    font: {
+      family: "Inconsolata", monospace;
+      weight: 700;
+      size: 24px;
+    }
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
     color: $dark1;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 95px;
-    letter-spacing: -0.035em;
-    margin-bottom: 36px;
   }
-  h6 {
-    color: $dark2;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: -0.035em;
-    margin-bottom: 64px;
+  main {
+    margin-top: 64px;
+    font-family: "Space Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    img {
+      width: 287px;
+      height: 238px;
+    }
+    h1 {
+      color: $dark1;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 71px;
+      letter-spacing: -0.035em;
+      margin-bottom: 30px;
+    }
+    h6 {
+      color: $dark2;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: -0.035em;
+      margin-bottom: 64px;
+    }
+    button {
+      background-color: $dark1;
+      width: 216px;
+      height: 68px;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: -0.035em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
   }
-}
-footer {
-  font-family: "Montserrat", sans-serif;
+  footer {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #bdbdbd;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+  }
 }
