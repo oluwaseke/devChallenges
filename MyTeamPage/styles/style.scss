@@ -1,0 +1,44 @@
+$dark-1: #000000;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: $dark-1;
+}
+.container {
+    padding: 70px 12px;
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        h1 {
+            font: {
+                family: "PT Serif", "serif";
+                weight: 700;
+                size: 36px;
+            }
+            line-height: 48px;
+            letter-spacing: -0.045em;
+        }
+        h3 {
+            font: {
+                family: "Poppins", "sans-serif";
+                size: 18px;
+                weight: 600;
+            }
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            line-height: 27px;
+        }
+        h6 {
+            line-height: 21px;
+            font: {
+                family: "Poppins", "sans-serif";
+                size: 14px;
+                weight: 400;
+            }
+        }
+    }
+}
