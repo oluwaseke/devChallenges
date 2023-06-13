@@ -6,10 +6,13 @@ $secondary-font: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #fafafa;
   position: relative;
-  height: 100vh;
   padding: 71px 12px;
 }
 header {
@@ -64,13 +67,9 @@ header {
   top: 50px;
 }
 .card {
-  .card-content {
-    margin-top: auto;
-  }
   .inner-card {
     display: flex;
     gap: 6px;
-    margin-top: auto;
   }
   .rt-caption {
     text-transform: uppercase;
@@ -78,7 +77,7 @@ header {
     font: {
       family: $primary-font;
       weight: 400;
-      size: 12px;
+      size: 10px;
     }
     line-height: 13px;
     color: $dark-1;
@@ -104,10 +103,14 @@ footer {
   padding-bottom: 10px;
   text-align: center;
   color: #a9a9a9;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -130px;
   font: {
     family: "Montserrat", sans-serif;
     weight: 500;
-    size: 14px;
+    size: 12px;
   }
   line-height: 17px;
   a {
@@ -117,5 +120,114 @@ footer {
     &:hover {
       color: $dark-1;
     }
+  }
+}
+@media screen and (min-width: 780px) {
+  body {
+    padding: 7vw 16vw;
+  }
+  header {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 96px;
+    h1 {
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    h5 {
+      font-size: 14px;
+      line-height: 27px;
+      width: 255px;
+    }
+  }
+  .cards-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    margin-bottom: 115px;
+  }
+  .card {
+    .inner-card {
+      gap: 10px;
+    }
+    img {
+      width: 16vw;
+      height: 23vw;
+    }
+    .rt-caption {
+      line-height: 16px;
+      font-size: 10px;
+    }
+    .bottom-caption {
+      line-height: 27px;
+      font-size: 12px;
+    }
+  }
+  .card:nth-child(even) {
+    top: 0;
+  }
+  .card:nth-child(3n + 2) {
+    position: relative;
+    top: 100px;
+  }
+  footer {
+    margin-left: -111.5px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header {
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    h5 {
+      font-size: 16px;
+      width: 300px;
+    }
+  }
+  .card {
+    .rt-caption {
+      font-size: 12px;
+    }
+    .bottom-caption {
+      font-size: 15px;
+    }
+  }
+  footer {
+    font-size: 16px;
+    margin-left: -148.5px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  header {
+    h1 {
+      font-size: 40px;
+      width: max-content;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h5 {
+      font-size: 18px;
+      width: 400px;
+    }
+  }
+  .card {
+    .rt-caption {
+      font-size: 14px;
+    }
+    .bottom-caption {
+      font-size: 16px;
+    }
+  }
+  footer {
+    /* font-size: 16px;
+    margin-left: -148.5px; */
   }
 }

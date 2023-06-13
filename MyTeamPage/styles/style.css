@@ -4,10 +4,13 @@
   padding: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #fafafa;
   position: relative;
-  height: 100vh;
   padding: 71px 12px;
 }
 
@@ -60,20 +63,16 @@ header h5 {
   top: 50px;
 }
 
-.card .card-content {
-  margin-top: auto;
-}
 .card .inner-card {
   display: flex;
   gap: 6px;
-  margin-top: auto;
 }
 .card .rt-caption {
   text-transform: uppercase;
   writing-mode: vertical-lr;
   font-family: "PT Serif", serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 13px;
   color: #000000;
   letter-spacing: 0.1px;
@@ -96,9 +95,13 @@ footer {
   padding-bottom: 10px;
   text-align: center;
   color: #a9a9a9;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -130px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 17px;
 }
 footer a {
@@ -108,4 +111,106 @@ footer a {
 }
 footer a:hover {
   color: #000000;
+}
+
+@media screen and (min-width: 780px) {
+  body {
+    padding: 7vw 16vw;
+  }
+  header {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 96px;
+  }
+  header h1 {
+    font-size: 28px;
+  }
+  header h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  header h5 {
+    font-size: 14px;
+    line-height: 27px;
+    width: 255px;
+  }
+  .cards-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    margin-bottom: 115px;
+  }
+  .card .inner-card {
+    gap: 10px;
+  }
+  .card img {
+    width: 16vw;
+    height: 23vw;
+  }
+  .card .rt-caption {
+    line-height: 16px;
+    font-size: 10px;
+  }
+  .card .bottom-caption {
+    line-height: 27px;
+    font-size: 12px;
+  }
+  .card:nth-child(even) {
+    top: 0;
+  }
+  .card:nth-child(3n+2) {
+    position: relative;
+    top: 100px;
+  }
+  footer {
+    margin-left: -111.5px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header h2 {
+    font-size: 18px;
+  }
+  header h5 {
+    font-size: 16px;
+    width: 300px;
+  }
+  .card .rt-caption {
+    font-size: 12px;
+  }
+  .card .bottom-caption {
+    font-size: 15px;
+  }
+  footer {
+    font-size: 16px;
+    margin-left: -148.5px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  header h1 {
+    font-size: 40px;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  header h2 {
+    font-size: 24px;
+  }
+  header h5 {
+    font-size: 18px;
+    width: 400px;
+  }
+  .card .rt-caption {
+    font-size: 14px;
+  }
+  .card .bottom-caption {
+    font-size: 16px;
+  }
+  footer {
+    /* font-size: 16px;
+    margin-left: -148.5px; */
+  }
 }/*# sourceMappingURL=style.css.map */
