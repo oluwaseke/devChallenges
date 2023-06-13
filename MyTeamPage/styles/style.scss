@@ -1,44 +1,121 @@
 $dark-1: #000000;
+$primary-font: "PT Serif", serif;
+$secondary-font: "Poppins", sans-serif;
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    color: $dark-1;
+  background-color: #fafafa;
+  position: relative;
+  height: 100vh;
+  padding: 71px 12px;
 }
-.container {
-    padding: 70px 12px;
-    header {
-        display: flex;
-        flex-direction: column;
-        gap: 38px;
-        h1 {
-            font: {
-                family: "PT Serif", "serif";
-                weight: 700;
-                size: 36px;
-            }
-            line-height: 48px;
-            letter-spacing: -0.045em;
-        }
-        h3 {
-            font: {
-                family: "Poppins", "sans-serif";
-                size: 18px;
-                weight: 600;
-            }
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            line-height: 27px;
-        }
-        h6 {
-            line-height: 21px;
-            font: {
-                family: "Poppins", "sans-serif";
-                size: 14px;
-                weight: 400;
-            }
-        }
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  margin-bottom: 40px;
+  h1 {
+    font: {
+      family: $primary-font;
+      weight: 700;
+      size: 36px;
     }
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    color: $dark-1;
+  }
+  h2 {
+    font: {
+      family: $secondary-font;
+      weight: 600;
+      size: 18px;
+    }
+    line-height: 27px;
+    text-transform: uppercase;
+    color: $dark-1;
+  }
+  h5 {
+    font: {
+      family: $secondary-font;
+      weight: 400;
+      size: 14px;
+    }
+    line-height: 21px;
+    width: 340px;
+    color: $dark-1;
+  }
+}
+.cards-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 18px;
+  row-gap: 50px;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding-left: 7px;
+}
+.card:nth-child(even) {
+  position: relative;
+  top: 50px;
+}
+.card {
+  .card-content {
+    margin-top: auto;
+  }
+  .inner-card {
+    display: flex;
+    gap: 6px;
+    margin-top: auto;
+  }
+  .rt-caption {
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    font: {
+      family: $primary-font;
+      weight: 400;
+      size: 12px;
+    }
+    line-height: 13px;
+    color: $dark-1;
+    letter-spacing: 0.1px;
+  }
+  .bottom-caption {
+    color: $dark-1;
+    margin-top: 10px;
+    font: {
+      family: $secondary-font;
+      weight: 600;
+      size: 14px;
+      letter-spacing: 0.25px;
+    }
+    line-height: 21px;
+  }
+  img {
+    width: 135px;
+    height: 207px;
+  }
+}
+footer {
+  padding-bottom: 10px;
+  text-align: center;
+  color: #a9a9a9;
+  font: {
+    family: "Montserrat", sans-serif;
+    weight: 500;
+    size: 14px;
+  }
+  line-height: 17px;
+  a {
+    color: inherit;
+    font-weight: 800;
+    transition: all 0.3s;
+    &:hover {
+      color: $dark-1;
+    }
+  }
 }

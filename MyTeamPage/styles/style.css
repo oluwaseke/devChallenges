@@ -5,35 +5,107 @@
 }
 
 body {
-  color: #000000;
+  background-color: #fafafa;
+  position: relative;
+  height: 100vh;
+  padding: 71px 12px;
 }
 
-.container {
-  padding: 70px 12px;
-}
-.container header {
+header {
   display: flex;
   flex-direction: column;
   gap: 38px;
+  margin-bottom: 40px;
 }
-.container header h1 {
-  font-family: "PT Serif", "serif";
+header h1 {
+  font-family: "PT Serif", serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.045em;
+  color: #000000;
 }
-.container header h3 {
-  font-family: "Poppins", "sans-serif";
-  font-size: 18px;
+header h2 {
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+  font-size: 18px;
   line-height: 27px;
+  text-transform: uppercase;
+  color: #000000;
 }
-.container header h6 {
-  line-height: 21px;
-  font-family: "Poppins", "sans-serif";
-  font-size: 14px;
+header h5 {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  width: 340px;
+  color: #000000;
+}
+
+.cards-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  row-gap: 50px;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding-left: 7px;
+}
+
+.card:nth-child(even) {
+  position: relative;
+  top: 50px;
+}
+
+.card .card-content {
+  margin-top: auto;
+}
+.card .inner-card {
+  display: flex;
+  gap: 6px;
+  margin-top: auto;
+}
+.card .rt-caption {
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  color: #000000;
+  letter-spacing: 0.1px;
+}
+.card .bottom-caption {
+  color: #000000;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  font-letter-spacing: 0.25px;
+  line-height: 21px;
+}
+.card img {
+  width: 135px;
+  height: 207px;
+}
+
+footer {
+  padding-bottom: 10px;
+  text-align: center;
+  color: #a9a9a9;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+footer a {
+  color: inherit;
+  font-weight: 800;
+  transition: all 0.3s;
+}
+footer a:hover {
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */
