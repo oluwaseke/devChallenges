@@ -3,19 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="shortcut icon" href="/devchallenges.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;600;700&family=Montserrat:wght@400;500;700;800&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <title>Interior Consultant</title>
+    <title>Document</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div class="logo">This Interior</div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <nav>
+        <ul class="overlay">
+          <li><a href="#">Home</a></li>
+          <li><a href="">Collection</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h1>Modern interior</h1>
+        <p>
+          A full-Service residential & commercial interior design and staging
+          company offering professional organizing & eco-services.
+        </p>
+        <h4>
+          Read more
+          <i class="fa-solid fa-arrow-right-long" style="color: #ffffff"></i>
+        </h4>
+      </div>
+      <div class="container">
+        <img src="photo1.png" alt="Interior Design" />
+        <div class="profile">
+          <div class="profile-data">
+            <img src="photo2.png" alt="Aliza Webber" />
+            <div>
+              <h5>Aliza Webber</h5>
+              <h6>Interior Designer</h6>
+            </div>
+          </div>
+          <h2>Designed in 2020 by Aliza Webber</h2>
+        </div>
+      </div>
+    </main>
+    <footer>
+      created by
+      <a
+        target="_blank"
+        href="https://github.com/oluwaseke/devChallenges/tree/main/MyTeamPage"
+        >oluwaseke</a
+      >
+      - devChallenges.io
+    </footer>
   </body>
 </html>

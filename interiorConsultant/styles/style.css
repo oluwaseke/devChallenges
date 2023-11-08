@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #181719;
+  color: #ffffff;
+}
+
+body {
+  padding: 19px 12px;
+  position: relative;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+header .logo {
+  font-family: "Crimson Pro", serif;
+  font-size: 14px;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  width: 103px;
+  height: 31px;
+}
+
+.overlay {
+  background-color: #181719;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main h1 {
+  font-family: "Lora", serif;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+main p {
+  width: 250px;
+  margin-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+main h4 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 37px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container {
+  position: relative;
+  height: 345px;
+  margin-bottom: 30px;
+}
+.container img {
+  width: 93vw;
+  height: 70vw;
+}
+.container .profile {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  background-color: #181719;
+  width: 80vw;
+  height: 37vw;
+  padding: 13px 19px;
+}
+.container .profile .profile-data {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.container .profile .profile-data img {
+  width: 36.585px;
+  height: 36.585px;
+  border-radius: 37px;
+}
+.container .profile .profile-data h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.container .profile .profile-data h6 {
+  color: #828282;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.container .profile h2 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Lora", serif;
+  width: 210px;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  background-color: transparent;
+  color: #a9a9a9;
+  /*  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -123.5px; */
+}
+footer a {
+  background-color: inherit;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 800;
+  transition: all 0.2s;
+}
+footer a:hover, footer a:active {
+  color: azure;
+}/*# sourceMappingURL=style.css.map */
