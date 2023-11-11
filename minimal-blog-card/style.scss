@@ -4,10 +4,13 @@
   box-sizing: border-box;
   font-family: "Sora", sans-serif;
 }
+html {
+  height: 100%;
+}
 body {
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: 100%;
   background-color: #fafaf9;
 }
 .card {
